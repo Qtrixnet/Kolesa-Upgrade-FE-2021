@@ -1,13 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+    </head>
+    <body>
+        <div id="app">
+            <div class="popup">
+                <div class="popup__slider">
+                    <img class="popup__slider-image" src="" alt="" />
+                    <div class="popup__slider-preview">
+                        <img
+                            class="popep__slider-preview-image"
+                            src=""
+                            alt=""
+                        />
+                        <img
+                            class="popep__slider-preview-image"
+                            src=""
+                            alt=""
+                        />
+                        <img
+                            class="popep__slider-preview-image"
+                            src=""
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <form action="" class="popup__form">
+                    <h2 class="popup__title">
+                        Футболка "Эволюционируй или сдохни"
+                    </h2>
+                    <span class="popup__price">100 баллов</span>
+                    <button class="popup__submit-button" type="submit">
+                        Заказать
+                    </button>
+                    <div class="popup__balance">
+                        <span class="popup__">Твой балланс:</span>
+                        <span class="popup__balance-count">3 945 баллов</span>
+                    </div>
+                    <fieldset class="popup__form-data">
+                        <span class="popup__color-title">Цвета:</span>
+                        <label for="color-blue">
+                            <input
+                                class="custom-radio"
+                                name="color"
+                                type="radio"
+                                id="color-blue"
+                                value="blue"
+                            />
+                            Blue
+                        </label>
+                        <label for="color-beige">
+                            <input
+                                class="custom-radio"
+                                name="color"
+                                type="radio"
+                                id="color-beige"
+                                value="beige"
+                            />
+                            Beige
+                        </label>
+                        <label for="color-gray">
+                            <input
+                                class="custom-radio"
+                                name="color"
+                                type="radio"
+                                id="color-gray"
+                                value="gray"
+                            />
+                            Gray
+                        </label>
+                        <span>Размер:</span>
+                        <label for="size-small">
+                            <input
+                                class="custom-radio"
+                                name="size"
+                                type="radio"
+                                id="size-small"
+                                value="small"
+                            />
+                            S
+                        </label>
+                        <label for="size-medium">
+                            <input
+                                class="custom-radio"
+                                name="size"
+                                type="radio"
+                                id="size-medium"
+                                value="medium"
+                            />
+                            M
+                        </label>
+                        <label for="size-large">
+                            <input
+                                class="custom-radio"
+                                name="size"
+                                type="radio"
+                                id="size-large"
+                                value="large"
+                            />
+                            L
+                        </label>
+                    </fieldset>
+                    <span class="popup__details">Детали:</span>
+                    <p class="popup__details-text">
+                        Брендированная толстовка от Qazaq Republic. Материал:
+                        Хлопок 80%, Вискоза 20%
+                    </p>
+                    <span class="popup__size">Как выбрать размер:</span>
+                    <p class="popup__size-text">
+                        Написать дяде Рику для уточнения.
+                    </p>
+                </form>
+                <div class="popup__overlay"></div>
+                <button type="popup__close-button"></button>
+            </div>
+        </div>
+        <script type="module" src="/src/pages/index.js"></script>
+    </body>
 </html>
