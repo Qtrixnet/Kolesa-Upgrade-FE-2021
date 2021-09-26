@@ -1,0 +1,9 @@
+.popup__checkbox-list {
+    margin: 8px 0 24px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}

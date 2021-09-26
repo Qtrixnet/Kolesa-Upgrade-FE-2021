@@ -1,0 +1,27 @@
+.popup__label {
+    min-width: 40px;
+    min-height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(28, 24, 25, 0.1);
+    transition: all 0.2s ease;
+    justify-content: center;
+}
+
+.popup__input:checked + .popup__label {
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #d6ecfb;
+    color: #1c1819;
+}
+
+.popup__label:hover {
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #d6ecfb;
+    color: #1c1819;
+}

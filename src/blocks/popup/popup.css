@@ -1,0 +1,37 @@
+@import url('./__overlay/popup__overlay.css');
+@import url('./__window/popup__window.css');
+@import url('./__title/popup__title.css');
+@import url('./__slider/popup__slider.css');
+@import url('./__slider-image/popup__slider-image.css');
+@import url('./__slider-preview/popup__slider-preview.css');
+@import url('./__slider-preview-image/popup__slider-preview-image.css');
+@import url('./__slider-preview-image/_active/popup__slider-preview-image_active.css');
+@import url('./__price/popup__price.css');
+@import url('./__form/popup__form.css');
+@import url('./__submit-button/popup__submit-button.css');
+@import url('./__balance/popup__balance.css');
+@import url('./__main-info/popup__main-info.css');
+@import url('./__balance-title/popup__balance-title.css');
+@import url('./__balance-count/popup__balance-count.css');
+@import url('./__close-button/popup__close-button.css');
+@import url('./__details/popup__details.css');
+@import url('./__form-data/popup__form-data.css');
+@import url('./__details-text/popup__details-text.css');
+@import url('./__checkbox-title/popup__checkbox-title.css');
+@import url('./__checkbox-list/popup__checkbox-list.css');
+@import url('./__checkbox-list-item/popup__checkbox-list-item.css');
+@import url('./__input/popup__input.css');
+@import url('./__label/popup__label.css');
+@import url('./__color/popup__color.css');
+@import url('./__label/_color/popup__label_color.css');
+@import url('./__color/_beige/popup__color_beige.css');
+@import url('./__color/_blue/popup__color_blue.css');
+@import url('./__color/_gray/popup__color_gray.css');
+
+.popup {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

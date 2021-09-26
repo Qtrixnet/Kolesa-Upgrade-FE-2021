@@ -1,0 +1,5 @@
+.popup__slider {
+    display: flex;
+    flex-direction: column;
+    max-width: 330px;
+}

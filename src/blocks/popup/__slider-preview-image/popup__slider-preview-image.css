@@ -1,0 +1,13 @@
+.popup__slider-preview-image {
+    border-radius: 8px;
+    margin: 4px;
+    border: 1px solid white;
+    transition: all 0.2s ease;
+    background-color: white;
+    object-fit: cover;
+}
+
+.popup__slider-preview-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
