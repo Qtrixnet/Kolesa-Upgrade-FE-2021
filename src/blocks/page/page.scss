@@ -10,4 +10,17 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'nav main'
+        'footer footer';
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
 }
