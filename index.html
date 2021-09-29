@@ -1,95 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
-    </head>
 
-    <body>
-        <div id="app">
-            <div class="page">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="page">
+            <div class="page__container">
                 <aside class="page__navigation">
                     <nav class="page__navigation-container">
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Оргсхема</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Kolesa Team</a
-                        >
-                        <a
-                            target="_blank"
-                            class="
-                                page__navigation-link
-                                page__navigation-link_active
-                            "
-                            href="https://www.example.com/"
-                            >Kolesa Shop</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Картина компании</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Новости</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Education</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Guidelines</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >Библиотека</a
-                        >
-                        <a
-                            target="_blank"
-                            class="page__navigation-link"
-                            href="https://www.example.com/"
-                            >FAQ</a
-                        >
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Оргсхема</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Kolesa Team</a>
+                        <a target="_blank" class="
+                                    page__navigation-link
+                                    page__navigation-link_active
+                                " href="https://www.example.com/">Kolesa Shop</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Картина
+                            компании</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Новости</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Education</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Guidelines</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">Библиотека</a>
+                        <a target="_blank" class="page__navigation-link" href="https://www.example.com/">FAQ</a>
                     </nav>
                 </aside>
                 <header class="header">
-                    <div class="header__logo"></div>
+                    <a class="header__logo" href="https://www.example.com" target="_blank"></a>
                     <div class="header__container">
                         <div class="header__search-container">
-                            <input
-                                class="header__search"
-                                placeholder="Поиск"
-                                type="text"
-                            />
-                            <button
-                                class="header__search-button"
-                                type="button"
-                            ></button>
+                            <input class="header__search" placeholder="Поиск" type="text" />
+                            <button class="header__search-button" type="button"></button>
                         </div>
-                        <a
-                            class="header__link"
-                            target="_blank"
-                            href="https://www.example.com/"
-                        >
+                        <a class="header__link" target="_blank" href="https://www.example.com/">
                             <div class="header__avatar"></div>
                             <div class="header__user-info">
                                 <span class="header__user-name">Мортиджан</span>
@@ -98,278 +45,196 @@
                         </a>
                     </div>
                 </header>
-                <main></main>
-                <footer class="footer">
-                    <div class="footer__container">
-                        <div class="footer__social">
-                            <span class="footer__social-title"
-                                >&copy Kolesa Group</span
-                            >
-                            <ul class="footer__social-list">
-                                <li class="footer__social-list-item">
-                                    <a
-                                        target="_blank"
-                                        class="
+                <main class="main">
+                    <h1 class="main__title">Магазин мерча Kolesa Group</h1>
+                    <img class="main__image" width="1038" height="335" src="./src/images/main-banner.png" alt="">
+                    <div class="main__point-button-container">
+                        <button class="main__point-button main__point-button_add">Получить баллы</button>
+                        <button class="main__point-button main__point-button_how">Как получить баллы</button>
+                        <button class="main__point-button main__point-button_gift">Подарить баллы</button>
+                    </div>
+                    <div class="main__category-button-container">
+                        <button class="category-button category-button_active">Все товары</button>
+                        <button class="category-button">Одежда</button>
+                        <button class="category-button">Аксессуары</button>
+                    </div>
+                    <ul class="main__cards-list">
+                    </ul>
+                </main>
+            </div>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__social">
+                        <span class="footer__social-title">&copy Kolesa Group</span>
+                        <ul class="footer__social-list">
+                            <li class="footer__social-list-item">
+                                <a target="_blank" class="
                                             footer__social-link
                                             footer__social-link_instagram
-                                        "
-                                        href="https://www.example.com/"
-                                    ></a>
-                                </li>
-                                <li class="footer__social-list-item">
-                                    <a
-                                        target="_blank"
-                                        class="
+                                        " href="https://www.example.com/"></a>
+                            </li>
+                            <li class="footer__social-list-item">
+                                <a target="_blank" class="
                                             footer__social-link
                                             footer__social-link_youtube
-                                        "
-                                        href="https://www.example.com/"
-                                    ></a>
-                                </li>
-                                <li class="footer__social-list-item">
-                                    <a
-                                        target="_blank"
-                                        class="
+                                        " href="https://www.example.com/"></a>
+                            </li>
+                            <li class="footer__social-list-item">
+                                <a target="_blank" class="
                                             footer__social-link
                                             footer__social-link_vk
-                                        "
-                                        href="https://www.example.com/"
-                                    ></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer__info">
-                            <div class="footer__info-text">
-                                <span class="footer__info-subtitle"
-                                    >Есть идеи что улучшить?
-                                </span>
-                                <span class="footer__info-subtitle"
-                                    >Не знаешь, с кем решить проблему?</span
-                                >
-                            </div>
-                            <a
-                                class="footer__link"
-                                target="_blank"
-                                href="https://www.example.com/"
-                                >Написать</a
-                            >
-                        </div>
+                                        " href="https://www.example.com/"></a>
+                            </li>
+                        </ul>
                     </div>
-                </footer>
-                <div class="popup">
-                    <div class="popup__window">
-                        <div class="popup__slider">
-                            <img
-                                class="popup__slider-image"
-                                src="./src/images/photo-main.png"
-                                alt='Футболка "Эволюционируй или сдохни"'
-                                width="330"
-                                height="330"
-                            />
-                            <ul class="popup__slider-preview">
-                                <li>
-                                    <img
-                                        class="popup__slider-preview-image"
-                                        src="./src/images/preview-2.png"
-                                        alt='Футболка "Эволюционируй или сдохни"'
-                                        width="50"
-                                        height="50"
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        class="
+                    <div class="footer__info">
+                        <div class="footer__info-text">
+                            <span class="footer__info-subtitle">Есть идеи что улучшить?
+                            </span>
+                            <span class="footer__info-subtitle">Не знаешь, с кем решить проблему?</span>
+                        </div>
+                        <a class="footer__link" target="_blank" href="https://www.example.com/">Написать</a>
+                    </div>
+                </div>
+            </footer>
+            <div class="popup">
+                <div class="popup__window">
+                    <div class="popup__slider">
+                        <img class="popup__slider-image" src="./src/images/photo-main.png"
+                            alt='Футболка "Эволюционируй или сдохни"' width="330" height="330" />
+                        <ul class="popup__slider-preview">
+                            <li>
+                                <img class="popup__slider-preview-image" src="./src/images/preview-2.png"
+                                    alt='Футболка "Эволюционируй или сдохни"' width="50" height="50" />
+                            </li>
+                            <li>
+                                <img class="
                                             popup__slider-preview-image
                                             popup__slider-preview-image_active
-                                        "
-                                        src="./src/images/preview-1.png"
-                                        alt='Футболка "Эволюционируй или сдохни"'
-                                        width="50"
-                                        height="50"
-                                    />
-                                </li>
-                                <li>
-                                    <img
-                                        class="popup__slider-preview-image"
-                                        src="./src/images/preview-3.png"
-                                        alt='Футболка "Эволюционируй или сдохни"'
-                                        width="50"
-                                        height="50"
-                                    />
-                                </li>
-                            </ul>
-                        </div>
-                        <form action="" class="popup__form">
-                            <div class="popup__main-info">
-                                <h2 class="popup__title">
-                                    Футболка "Эволюционируй или сдохни"
-                                </h2>
-                                <span class="popup__price">100 баллов</span>
-                                <button
-                                    class="popup__submit-button"
-                                    type="submit"
-                                >
-                                    Заказать
-                                </button>
-                                <div class="popup__balance">
-                                    <span class="popup__balance-title"
-                                        >Твой балланс:</span
-                                    >
-                                    <span class="popup__balance-count"
-                                        >3 945 баллов</span
-                                    >
-                                </div>
+                                        " src="./src/images/preview-1.png" alt='Футболка "Эволюционируй или сдохни"'
+                                    width="50" height="50" />
+                            </li>
+                            <li>
+                                <img class="popup__slider-preview-image" src="./src/images/preview-3.png"
+                                    alt='Футболка "Эволюционируй или сдохни"' width="50" height="50" />
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="" class="popup__form">
+                        <div class="popup__main-info">
+                            <h2 class="popup__title">
+                                Футболка "Эволюционируй или сдохни"
+                            </h2>
+                            <span class="popup__price">100 баллов</span>
+                            <button class="popup__submit-button" type="submit">
+                                Заказать
+                            </button>
+                            <div class="popup__balance">
+                                <span class="popup__balance-title">Твой балланс:</span>
+                                <span class="popup__balance-count">3 945 баллов</span>
                             </div>
-                            <fieldset class="popup__form-data">
-                                <h4 class="popup__checkbox-title">Цвета:</h4>
-                                <ul class="popup__checkbox-list">
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="color"
-                                            type="radio"
-                                            id="color-blue"
-                                            value="Синий"
-                                            checked
-                                            required
-                                        />
-                                        <label
-                                            for="color-blue"
-                                            class="
+                        </div>
+                        <fieldset class="popup__form-data">
+                            <h4 class="popup__checkbox-title">Цвета:</h4>
+                            <ul class="popup__checkbox-list">
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="color" type="radio" id="color-blue" value="Синий"
+                                        checked required />
+                                    <label for="color-blue" class="
                                                 popup__label popup__label_color
-                                            "
-                                        >
-                                            <span
-                                                class="
+                                            ">
+                                        <span class="
                                                     popup__color
                                                     popup__color_blue
-                                                "
-                                            ></span>
-                                            Синий
-                                        </label>
-                                    </li>
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="color"
-                                            type="radio"
-                                            id="color-beige"
-                                            value="Бежевый"
-                                            required
-                                        />
-                                        <label
-                                            for="color-beige"
-                                            class="
+                                                "></span>
+                                        Синий
+                                    </label>
+                                </li>
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="color" type="radio" id="color-beige"
+                                        value="Бежевый" required />
+                                    <label for="color-beige" class="
                                                 popup__label popup__label_color
-                                            "
-                                        >
-                                            <span
-                                                class="
+                                            ">
+                                        <span class="
                                                     popup__color
                                                     popup__color_beige
-                                                "
-                                            ></span>
-                                            Бежевый
-                                        </label>
-                                    </li>
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="color"
-                                            type="radio"
-                                            id="color-gray"
-                                            value="Серый"
-                                            required
-                                        />
-                                        <label
-                                            for="color-gray"
-                                            class="
+                                                "></span>
+                                        Бежевый
+                                    </label>
+                                </li>
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="color" type="radio" id="color-gray" value="Серый"
+                                        required />
+                                    <label for="color-gray" class="
                                                 popup__label popup__label_color
-                                            "
-                                        >
-                                            <span
-                                                class="
+                                            ">
+                                        <span class="
                                                     popup__color
                                                     popup__color_gray
-                                                "
-                                            ></span>
-                                            Серый
-                                        </label>
-                                    </li>
-                                </ul>
+                                                "></span>
+                                        Серый
+                                    </label>
+                                </li>
+                            </ul>
 
-                                <h4 class="popup__checkbox-title">Размер:</h4>
-                                <ul class="popup__checkbox-list">
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="size"
-                                            type="radio"
-                                            id="size-small"
-                                            value="small"
-                                            checked
-                                            required
-                                        />
-                                        <label
-                                            for="size-small"
-                                            class="popup__label"
-                                        >
-                                            S
-                                        </label>
-                                    </li>
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="size"
-                                            type="radio"
-                                            id="size-medium"
-                                            value="medium"
-                                            required
-                                        />
-                                        <label
-                                            for="size-medium"
-                                            class="popup__label"
-                                        >
-                                            M
-                                        </label>
-                                    </li>
-                                    <li class="popup__checkbox-list-item">
-                                        <input
-                                            class="popup__input"
-                                            name="size"
-                                            type="radio"
-                                            id="size-large"
-                                            value="large"
-                                            required
-                                        />
-                                        <label
-                                            for="size-large"
-                                            class="popup__label"
-                                        >
-                                            L
-                                        </label>
-                                    </li>
-                                </ul>
-                            </fieldset>
-                            <h4 class="popup__details">Детали:</h4>
-                            <h3 class="popup__details-text">
-                                Брендированная толстовка от Qazaq Republic.
-                                Материал: Хлопок 80%, Вискоза 20%
-                            </h3>
-                            <h4 class="popup__details">Как выбрать размер:</h4>
-                            <h3 class="popup__details-text">
-                                Написать дяде Рику для уточнения.
-                            </h3>
-                        </form>
-                        <button
-                            type="button"
-                            class="popup__close-button"
-                        ></button>
-                    </div>
-                    <div class="popup__overlay"></div>
+                            <h4 class="popup__checkbox-title">Размер:</h4>
+                            <ul class="popup__checkbox-list">
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="size" type="radio" id="size-small" value="small"
+                                        checked required />
+                                    <label for="size-small" class="popup__label">
+                                        S
+                                    </label>
+                                </li>
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="size" type="radio" id="size-medium" value="medium"
+                                        required />
+                                    <label for="size-medium" class="popup__label">
+                                        M
+                                    </label>
+                                </li>
+                                <li class="popup__checkbox-list-item">
+                                    <input class="popup__input" name="size" type="radio" id="size-large" value="large"
+                                        required />
+                                    <label for="size-large" class="popup__label">
+                                        L
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <h4 class="popup__details">Детали:</h4>
+                        <h3 class="popup__details-text">
+                            Брендированная толстовка от Qazaq Republic.
+                            Материал: Хлопок 80%, Вискоза 20%
+                        </h3>
+                        <h4 class="popup__details">Как выбрать размер:</h4>
+                        <h3 class="popup__details-text">
+                            Написать дяде Рику для уточнения.
+                        </h3>
+                    </form>
+                    <button type="button" class="popup__close-button"></button>
                 </div>
+                <div class="popup__overlay"></div>
             </div>
+            <template class="cardTemplate">
+                <li class="main__card">
+                    <div class="main__card-image-container">
+                        <img width="330" height="330" class="main__card-image" src="./src/images/tshort.png"
+                            alt='Футболка "Эволюционируй или сдохни"'>
+                        <span class="main__card-image_new">new</span>
+                    </div>
+                    <div class="main__card-info">
+                        <span class="main__card-price">220 баллов</span>
+                        <h2 class="main__card-title">Футболка "Эволюционируй или сдохни"</h2>
+                        <span class="main__card-scale">Размеры S/M/L</span>
+                        <button class="main__card-button">Заказать</button>
+                    </div>
+                </li>
+            </template>
         </div>
-        <script type="module" src="/src/pages/index.js"></script>
-    </body>
+    </div>
+    <script type="module" src="/src/pages/index.js"></script>
+</body>
+
 </html>

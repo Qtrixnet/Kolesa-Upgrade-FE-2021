@@ -1,11 +1,12 @@
 @import url('../vendor/normalize.css');
-@import url('../blocks/page/page.scss');
+@import url('../blocks/page.scss');
 @import url('../blocks/popup.scss');
 @import url('../blocks/footer.scss');
 @import url('../blocks/navigation.scss');
 @import url('../blocks/header.scss');
+@import url('../blocks/main.scss');
 
 * {
     box-sizing: border-box;
-    // outline: 1px solid tomato
+    // outline: 1px dotted tomato
 }
