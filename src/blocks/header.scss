@@ -1,9 +1,12 @@
 .header {
     grid-area: header;
-    padding: 32px 0 24px 32px;
+    padding: 32px 0 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header__logo {
