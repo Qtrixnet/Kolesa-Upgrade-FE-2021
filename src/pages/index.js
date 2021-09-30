@@ -19,7 +19,7 @@ const openPopup = () => {
 for (let i = 0; i < CARDS_COUNT; i += 1) {
     const cardTemplate = document.querySelector('.cardTemplate');
     const card = cardTemplate.content
-        .querySelector('.main__card')
+        .querySelector('.card')
         .cloneNode(true);
 
     cardsList.appendChild(card);

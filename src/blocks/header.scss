@@ -16,6 +16,10 @@
     position: relative;
 }
 
+.header__logo:hover {
+    opacity: 0.8;
+}
+
 .header__logo:hover::after {
     transform-origin: left;
     transform: scaleX(1);
