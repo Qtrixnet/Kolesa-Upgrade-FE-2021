@@ -27,6 +27,10 @@
     color: #2a81dd;
 }
 
+.page__navigation-link_active:hover {
+    color: black;
+}
+
 .page__navigation-link_active::before {
     content: '';
     width: 4px;
