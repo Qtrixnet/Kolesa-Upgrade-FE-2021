@@ -19,8 +19,7 @@
     display: grid;
     grid-template-areas:
         'header header'
-        'nav main'
-        'footer footer';
+        'nav main';
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;

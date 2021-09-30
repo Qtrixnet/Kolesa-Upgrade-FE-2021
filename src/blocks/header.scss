@@ -2,7 +2,6 @@
     grid-area: header;
     padding: 32px 0 24px 32px;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -53,15 +52,17 @@
 
 .header__search-button {
     position: absolute;
-    top: 14px;
+    top: 50%;
+    transform: translate(0%, -50%);
     left: 19px;
     width: 17px;
     height: 17px;
+    padding: 14px;
     background-image: url('../images/lupa.svg');
     border: 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 16px;
     transition: all 0.2s ease;
     background-color: transparent;
 }
@@ -69,12 +70,12 @@
 .header__search-button:hover {
     opacity: 0.5;
     cursor: pointer;
-    transform: scale(1.1);
+    transform: translate(0%, -50%) rotate(10deg);
     transition: all 0.2s ease;
 }
 
 .header__search-button:active {
-    transform: scale(1);
+    transform: translate(0%, -50%) rotate(0deg);
 }
 
 .header__search {
@@ -83,10 +84,9 @@
     background-color: #f2f2f3;
     border-radius: 8px;
     border: 2px solid transparent;
-    color: #888b94;
+    color: #1c1819;
     font-size: 18px;
     line-height: 28px;
-    font-weight: 400;
 }
 
 .header__search:hover {
@@ -108,10 +108,6 @@
     transition: all 0.2s ease;
     text-decoration: none;
     border-radius: 8px;
-}
-
-.header__link:hover {
-    transform: scale(1.05);
 }
 
 .header__avatar {
@@ -141,7 +137,6 @@
 }
 
 .header__user-money {
-    font-weight: 400;
     font-size: 13px;
     line-height: 20px;
     color: black;
