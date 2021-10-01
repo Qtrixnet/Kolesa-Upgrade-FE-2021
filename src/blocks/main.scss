@@ -1,8 +1,15 @@
 .main {
-    grid-area: main;
     align-items: center;
     max-width: 1038px;
     width: 100%;
+}
+
+.page__main-container {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .main__title {

@@ -1,10 +1,7 @@
-.page__navigation {
-    grid-area: nav;
-}
-
 .page__navigation-container {
     display: flex;
     flex-direction: column;
+    padding-right: 100px;
 }
 
 .page__navigation-link {
@@ -36,12 +33,13 @@
 .page__navigation-link_active::before {
     content: '';
     width: 4px;
-    height: 36px;
+    min-height: 36px;
+    height: 100%;
     display: block;
     background-color: #2a81dd;
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     border-radius: 10px;
-    transform: translate(-8px, -15%);
+    transform: translate(-12px, -50%);
 }

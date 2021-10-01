@@ -10,16 +10,6 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
-}
-
-.page__container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-areas:
-        'header header'
-        'nav main'
-        'footer footer';
-    grid-template-columns: 1fr 1038px;
+    display: flex;
+    flex-direction: column;
 }
