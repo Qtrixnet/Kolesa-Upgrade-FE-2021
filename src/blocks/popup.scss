@@ -4,6 +4,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+}
+
+.popup_opened {
+    opacity: 1;
+    visibility: visible;
 }
 
 .popup__overlay {
@@ -28,7 +40,6 @@
     margin: 8px 0 8px;
     font-size: 20px;
     line-height: 32px;
-    font-weight: 400;
     max-width: 568px;
 }
 
@@ -88,7 +99,7 @@
 .popup__submit-button {
     background-color: #2a81dd;
     color: white;
-    padding: 6px;
+    padding: 4px;
     border-radius: 8px;
     margin: 8px 0 0;
     width: 134px;
@@ -96,7 +107,6 @@
     transition: all 0.2s ease;
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
     box-shadow: 0 2px 4px rgba(28, 24, 25, 0.1);
 }
 
@@ -140,7 +150,6 @@
 
 .popup__balance-title {
     color: #888b94;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     margin: 0 0 4px;
@@ -154,7 +163,7 @@
 
 .popup__close-button {
     background-color: transparent;
-    padding: 15px;
+    padding: 16px;
     position: absolute;
     top: 30px;
     right: 30px;
@@ -189,14 +198,12 @@
 
 .popup__details-text {
     margin: 4px 0 24px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     max-width: 568px;
 }
 
 .popup__checkbox-title {
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
@@ -228,7 +235,6 @@
 .popup__label {
     min-width: 40px;
     min-height: 40px;
-    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     display: flex;
