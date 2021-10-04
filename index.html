@@ -12,7 +12,6 @@
 
     <div class="page">
 
-
             <header class="header">
                 <a class="header__logo" href="https://www.example.com" target="_blank"></a>
                 <div class="header__container">
@@ -47,8 +46,6 @@
                     </nav>
                 </aside>
 
-
-
                 <main class="main">
                     <h1 class="main__title">Магазин мерча Kolesa Group</h1>
                     <img class="main__image" width="1038" height="335" src="./src/images/main-banner.jpg"
@@ -63,13 +60,11 @@
                         <button class="category-button">Одежда</button>
                         <button class="category-button">Аксессуары</button>
                     </div>
-                    <ul class="main__cards-list">
+                    <ul class="cards-list">
                         <!-- Контейнер для рендеринга карточек товара -->
                     </ul>
                 </main>
             </div>
-
-
 
             <footer class="footer">
                 <div class="footer__container">
@@ -106,8 +101,6 @@
                     </div>
                 </div>
             </footer>
-
-
 
         <div class="popup">
             <div class="popup__window">
@@ -232,7 +225,7 @@
         <!-- Шаблон карточки товара -->
         <template class="cardTemplate">
 
-            <li class="card">
+            <li class="card cards-list__item">
                 <div class="card__wrapper">
                     <div class="card__image-container">
                         <img width="330" height="330" class="card__image" src="./src/images/tshort.png"
