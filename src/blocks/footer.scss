@@ -1,6 +1,6 @@
 .footer {
-    background-color: $background-dark;
-    color: $text-light;
+    background-color: $color-background-dark;
+    color: $color-text-light;
     margin-top: auto;
 
     &__container {
@@ -19,8 +19,7 @@
     }
 
     &__social-title {
-        font-size: 16px;
-        line-height: 24px;
+        @include main-text;
     }
 
     &__social-list {
@@ -74,20 +73,20 @@
     }
 
     &__info-subtitle {
-        font-size: 14px;
-        line-height: 24px;
+        @include main-subtext;
     }
 
     &__link {
-        background-color: $background-light;
+        background-color: $color-background-light;
         min-width: 150px;
         padding: 6px 0;
-        font-size: 14px;
-        line-height: 24px;
+
+        @include main-subtext;
+
         text-align: center;
         text-decoration: none;
-        color: $accent;
-        border: 1px solid $buttor-border;
+        color: $color-accent;
+        border: 1px solid $color-buttor-border;
         border-radius: 8px;
         transition: all 0.2s ease;
         margin-left: 64px;

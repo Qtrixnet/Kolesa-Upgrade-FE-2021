@@ -3,12 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
 
     &__logo {
-        width: 215px;
+        min-width: 215px;
         height: 35px;
         background-image: url('../images/logo.svg');
         background-size: cover;
@@ -32,7 +33,7 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background-color: $accent;
+            background-color: $color-accent;
             transform-origin: right;
             transform: scaleX(0);
             transition: transform 500ms;
@@ -83,10 +84,10 @@
     &__search {
         width: 308px;
         padding: 8px 8px 8px 56px;
-        background-color: $input-background;
+        background-color: $color-input-background;
         border-radius: 8px;
         border: 2px solid transparent;
-        color: $text-dark;
+        color: $color-text-dark;
         font-size: 18px;
         line-height: 28px;
 
@@ -96,12 +97,12 @@
 
         &:focus {
             outline: 0;
-            border: 2px solid $accent;
+            border: 2px solid $color-accent;
         }
 
         &:active {
             outline: 0;
-            border: 2px solid $active;
+            border: 2px solid $color-active;
         }
     }
 
@@ -112,11 +113,11 @@
         border-radius: 8px;
 
         &:hover .header__user-money {
-            color: $accent;
+            color: $color-accent;
         }
 
         &:hover .header__avatar {
-            border-color: $accent;
+            border-color: $color-accent;
         }
     }
 
@@ -129,7 +130,7 @@
         border-radius: 50%;
         transition: all 0.2s ease;
         margin-right: 16px;
-        border: 2px solid $background-light;
+        border: 2px solid $color-background-light;
     }
 
     &__user-info {
@@ -141,15 +142,16 @@
 
     &__user-name {
         font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
-        color: $accent;
+
+        @include main-subtext;
+
+        color: $color-accent;
     }
 
     &__user-money {
         font-size: 13px;
         line-height: 20px;
-        color: $text-dark;
+        color: $color-text-dark;
         transition: all 0.2s ease;
     }
 }

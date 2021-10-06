@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+$color-badge-new: #64bd38;
+$color-active: red;
+$color-input-background: #f2f2f3;
+$color-background-light: white;
+$color-background-dark: #1c1819;
+$color-text-dark: #1c1819;
+$color-text-light: white;
+$color-accent: #2a81dd;
+$color-balance-background: #f0fafd;
+$color-balance-title: #888b94;
+$color-label-background: #d6ecfb;
+$color-button-add: #eff8eb;
+$color-button-how: #fffae7;
+$color-button-gift: #e9f2fb;
+$color-buttor-border: #e9e9e9;
+
+$text-size-primary: 16px;
+$text-size-secondary: 14px;
+$text-main-line-height: 24px;
+
+@mixin main-text {
+    font: {
+        size: $text-size-primary
+    }
+
+    line-height: $text-main-line-height
+}
+
+@mixin main-subtext {
+    font: {
+        size: $text-size-secondary
+    }
+
+    line-height: $text-main-line-height
+}

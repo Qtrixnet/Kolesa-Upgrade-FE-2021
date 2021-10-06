@@ -2,7 +2,7 @@
     &__wrapper {
         max-width: 330px;
         position: relative;
-        background-color: $background-light;
+        background-color: $color-background-light;
         transition: all 0.2s ease;
     }
 
@@ -10,9 +10,9 @@
         position: absolute;
         bottom: 16px;
         left: 16px;
-        background-color: $badge-new;
+        background-color: $color-badge-new;
         text-transform: uppercase;
-        color: $text-light;
+        color: $color-text-light;
         padding: 4px;
         border-radius: 4px;
     }
@@ -25,7 +25,7 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 36px;
-        color: $accent;
+        color: $color-accent;
         transition: all 0.2s ease;
     }
 
@@ -38,26 +38,29 @@
     &__title {
         margin: 8px 0 4px;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 24px;
+
+        @include main-text;
+
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
 
     &__scale {
-        font-size: 14px;
-        line-height: 24px;
-        color: $balance-title;
+        @include main-subtext;
+
+        color: $color-balance-title;
     }
 
     &__button {
+        @include main-text;
+
         margin-top: 16px;
         display: none;
         justify-content: center;
         align-items: center;
-        background-color: $background-light;
-        color: $text-light;
+        background-color: $color-background-light;
+        color: $color-text-light;
         border: 0;
         border-radius: 8px;
         padding: 10px 0;
@@ -79,12 +82,12 @@
     }
 
     & .card__price {
-        color: $active;
+        color: $color-active;
     }
 
     & .card__button {
         display: flex;
-        background-color: $accent;
+        background-color: $color-accent;
     }
 }
 

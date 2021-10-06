@@ -35,22 +35,22 @@
         &:hover {
             cursor: pointer;
             background-position: 24px 40%;
-            color: $accent;
+            color: $color-accent;
         }
 
         &_add {
             background-image: url('../images/plus.png');
-            background-color: $button-add;
+            background-color: $color-button-add;
         }
 
         &_how {
             background-image: url('../images/how.png');
-            background-color: $button-how;
+            background-color: $color-button-how;
         }
 
         &_gift {
             background-image: url('../images/gift.png');
-            background-color: $button-gift;
+            background-color: $color-button-gift;
         }
     }
 
@@ -64,24 +64,24 @@
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        color: $accent;
+        color: $color-accent;
         border-radius: 8px;
-        border: 1px solid $buttor-border;
+        border: 1px solid $color-buttor-border;
         background-color: transparent;
         padding: 5px 20px;
         transition: all 0.2s ease;
 
         &_active {
-            background-color: $label-background;
-            color: $text-dark;
-            border-color: $label-background;
+            background-color: $color-label-background;
+            color: $color-text-dark;
+            border-color: $color-label-background;
             cursor: pointer;
         }
 
         &:hover {
-            background-color: $label-background;
-            color: $text-dark;
-            border-color: $label-background;
+            background-color: $color-label-background;
+            color: $color-text-dark;
+            border-color: $color-label-background;
             cursor: pointer;
         }
     }
