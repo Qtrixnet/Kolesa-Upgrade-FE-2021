@@ -1,10 +1,13 @@
 .card {
+    $block: &;
+
     &:hover {
-        z-index: 999;
+        z-index: 10;
         cursor: pointer;
 
-        & .card__wrapper {
+        #{$block}__wrapper {
             position: absolute;
+            background-color: red;
             top: 0;
             left: 0;
             box-shadow: 0 2px 10px $transparent-black;
