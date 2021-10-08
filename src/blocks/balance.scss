@@ -1,9 +1,7 @@
 .balance {
     background-color: $color-balance-background;
-    position: absolute;
-    bottom: 0;
-    right: 0;
     display: flex;
+    position: relative;
     flex-direction: column;
     min-width: 196px;
     padding: 8px 16px;
