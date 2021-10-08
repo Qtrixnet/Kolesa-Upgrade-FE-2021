@@ -1,6 +1,6 @@
 import './index.scss';
 
-const cardsList = document.querySelector('.main__cards-list');
+const cardsList = document.querySelector('.cards-list');
 const popup = document.querySelector('.popup');
 const popupCloseButton = popup.querySelector('.popup__close-button');
 

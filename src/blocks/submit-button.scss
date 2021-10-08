@@ -1,0 +1,17 @@
+.submit-button {
+    background-color: $blue-primary;
+    color: $white;
+    padding: 4px;
+    border-radius: 8px;
+    width: 134px;
+    border: 0;
+    transition: all 0.2s ease;
+    font-size: 14px;
+    line-height: 24px;
+    box-shadow: 0 2px 4px $transparent-black;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}

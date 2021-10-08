@@ -1,0 +1,17 @@
+.checkbox-list {
+    @include list-reset;
+
+    padding: 8px 0 24px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    &__list-item {
+        color: $blue-primary;
+        margin: 0 8px 8px 0;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

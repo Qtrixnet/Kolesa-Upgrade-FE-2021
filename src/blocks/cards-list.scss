@@ -1,0 +1,15 @@
+.cards-list {
+    width: 100%;
+
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-start;
+    gap: 40px 24px;
+    padding: 16px 0 68px;
+
+    &__item {
+        position: relative;
+    }
+}

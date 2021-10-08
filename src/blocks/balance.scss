@@ -1,0 +1,36 @@
+.balance {
+    background-color: $color-balance-background;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-width: 196px;
+    padding: 8px 16px;
+    border-radius: 16px;
+
+    &::before {
+        content: '';
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        right: -4px;
+        background-image: url('../images/bags.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__title {
+        color: $gray;
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0 0 4px;
+    }
+
+    &__count {
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
