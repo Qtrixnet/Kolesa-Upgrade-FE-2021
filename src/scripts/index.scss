@@ -1,1 +1,13 @@
-@import '../vendor/normalize.scss', '../blocks/base', '../blocks/page', '../blocks/header', '../blocks/navigation', '../blocks/main', '../blocks/cards-list', '../blocks/card', '../blocks/footer', '../blocks/popup';
+@import '../vendor/normalize.scss';
+@import '../blocks/base';
+@import '../blocks/page';
+@import '../blocks/header';
+@import '../blocks/navigation';
+@import '../blocks/main';
+@import '../blocks/cards-list';
+@import '../blocks/card';
+@import '../blocks/submit-button.scss';
+@import '../blocks/balance.scss';
+@import '../blocks/checkbox-list.scss';
+@import '../blocks/footer';
+@import '../blocks/popup';

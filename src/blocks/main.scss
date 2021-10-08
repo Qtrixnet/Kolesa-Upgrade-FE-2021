@@ -35,22 +35,22 @@
         &:hover {
             cursor: pointer;
             background-position: 24px 40%;
-            color: $color-accent;
+            color: $blue-primary;
         }
 
         &_add {
             background-image: url('../images/plus.png');
-            background-color: $color-button-add;
+            background-color: $light-green;
         }
 
         &_how {
             background-image: url('../images/how.png');
-            background-color: $color-button-how;
+            background-color: $light-yellow;
         }
 
         &_gift {
             background-image: url('../images/gift.png');
-            background-color: $color-button-gift;
+            background-color: $light-blue;
         }
     }
 
@@ -64,7 +64,7 @@
         font-size: 14px;
         line-height: 24px;
         text-align: center;
-        color: $color-accent;
+        color: $blue-primary;
         border-radius: 8px;
         border: 1px solid $color-buttor-border;
         background-color: transparent;
@@ -73,14 +73,14 @@
 
         &_active {
             background-color: $color-label-background;
-            color: $color-text-dark;
+            color: $black;
             border-color: $color-label-background;
             cursor: pointer;
         }
 
         &:hover {
             background-color: $color-label-background;
-            color: $color-text-dark;
+            color: $black;
             border-color: $color-label-background;
             cursor: pointer;
         }

@@ -1,7 +1,8 @@
 .navigation {
     display: flex;
-    width: 100%;
-    max-width: 1440px;
+
+    @include max-width;
+
     margin: 0 auto;
     padding: 0 89px 0 32px;
     justify-content: space-between;
@@ -27,14 +28,14 @@
         }
 
         &:hover {
-            color: $color-accent;
+            color: $blue-primary;
         }
 
         &_active {
             font-weight: 600;
 
             &:hover {
-                color: $color-text-dark;
+                color: $black;
             }
 
             &::before {
@@ -43,7 +44,7 @@
                 min-height: 36px;
                 height: 100%;
                 display: block;
-                background-color: $color-accent;
+                background-color: $blue-primary;
                 position: absolute;
                 top: 50%;
                 left: 0;
