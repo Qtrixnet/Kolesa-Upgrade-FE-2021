@@ -55,8 +55,10 @@ const generatePopup = (card) => {
             <div class="popup__main-info">
                 <div class="popup__info-container">
                     <span class="popup__price">${price} баллов</span>
-                    <button class="submit-button" type="submit">
-                        Заказать
+                    <button
+                        class="${balanceCount > price ? 'submit-button' : 'submit-button submit-button_ask'}"
+                        type="submit">
+                        ${balanceCount > price ? 'Заказать' : 'Попросить 50 баллов'}
                     </button>
                 </div>
                 <div class="balance">
