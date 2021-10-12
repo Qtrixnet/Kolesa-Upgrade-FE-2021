@@ -17,7 +17,7 @@ const generatePopup = (card) => {
     return `<div class="popup">
     <div class="popup__window">
         <div class="popup__slider">
-            <img class="popup__slider-image" src="${picture}"
+            <img class="popup__slider-image" src="src/images/product-images/${picture}"
                 alt='${name}' width="330" height="330" />
             <ul class="popup__slider-preview">
                 <li>
@@ -32,7 +32,7 @@ const generatePopup = (card) => {
                 <li>
                     <img
                         class="popup__slider-preview-image popup__slider-preview-image_active"
-                        src="${picture}"
+                        src="src/images/product-images/${picture}"
                         alt='${name}'
                         width="50"
                         height="50"

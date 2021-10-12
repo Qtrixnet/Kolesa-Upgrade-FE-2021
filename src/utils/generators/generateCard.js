@@ -6,7 +6,7 @@ const generateCard = ({
 }) => `<li data-id=${id} class="card cards-list__item">
     <div class="card__wrapper">
         <div class="card__image-container">
-            <img loading="lazy" width="330" height="330" class="card__image" src="${picture}"
+            <img loading="lazy" width="330" height="330" class="card__image" src="src/images/product-images/${picture}"
                 alt='${name}'>
             ${isNew ? '<span class="card__new">new</span>' : ''}
         </div>
