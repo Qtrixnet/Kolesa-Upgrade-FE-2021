@@ -1,17 +1,11 @@
-import fucking from '../images/clothes/fucking-awesome.jpg';
-import hunterNewton from '../images/clothes/hunter-newton.jpg';
-import kukuvaja from '../images/clothes/kukuvaja.jpg';
-import austinWade from '../images/clothes/austin-wade.jpg';
-import jonathanSanchez from '../images/clothes/jonathan-sanchez.jpg';
-import viniciusHenrique from '../images/clothes/vinicius-henrique.jpg';
 import generateRandomId from '../utils/generators/generateId';
 
 const clothes = [
     {
         id:      generateRandomId(),
         isNew:   true,
-        price:   100,
-        picture: fucking,
+        price:   101,
+        picture: 'src/images/clothes/fucking-awesome.jpg',
         details: 'Футболка "fucking awesome" от всем известного дизайнера',
         name:    'Футботка "Fucking awesome"',
         sizes:   ['S', 'M', 'L'],
@@ -33,8 +27,8 @@ const clothes = [
     {
         id:      generateRandomId(),
         isNew:   false,
-        price:   200,
-        picture: hunterNewton,
+        price:   202,
+        picture: 'src/images/clothes/hunter-newton.jpg',
         details: 'Эксклюзивная черная футболка "Phenomenally black" от Hunter Newton',
         name:    'Футболка "Phenomenally black"',
         sizes:   ['XL', 'XXL'],
@@ -48,8 +42,8 @@ const clothes = [
     {
         id:      generateRandomId(),
         isNew:   true,
-        price:   250,
-        picture: kukuvaja,
+        price:   255,
+        picture: 'src/images/clothes/kukuvaja.jpg',
         details: 'Футботка с хмурой совой - "Kukuvaja"',
         name:    'Футботка "Kukuvaja"',
         sizes:   ['M', 'L'],
@@ -71,8 +65,8 @@ const clothes = [
     {
         id:      generateRandomId(),
         isNew:   false,
-        price:   170,
-        picture: austinWade,
+        price:   179,
+        picture: 'src/images/clothes/austin-wade.jpg',
         details: 'Футболка "Methodical coffee" от Austin Wade',
         name:    'Футболка "Methodical coffee"',
         sizes:   ['S', 'M'],
@@ -98,8 +92,8 @@ const clothes = [
     {
         id:      generateRandomId(),
         isNew:   false,
-        price:   180,
-        picture: jonathanSanchez,
+        price:   183,
+        picture: 'src/images/clothes/jonathan-sanchez.jpg',
         details: 'Футболка "Love thy emeny" от Jonathan Sanchez',
         name:    'Футболка "Love thy emeny"',
         sizes:   ['S', 'M'],
@@ -121,8 +115,8 @@ const clothes = [
     {
         id:      generateRandomId(),
         isNew:   false,
-        price:   130,
-        picture: viniciusHenrique,
+        price:   136,
+        picture: 'src/images/clothes/vinicius-henrique.jpg',
         details: 'Футболка "Let me hear the fucking bass" от Vinicius Henrique',
         name:    'Футболка "Let me hear the fucking bass"',
         sizes:   ['S', 'M'],

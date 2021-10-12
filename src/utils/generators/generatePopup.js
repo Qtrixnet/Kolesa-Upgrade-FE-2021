@@ -1,8 +1,9 @@
 import generateColorsMarkup from './generateColors';
 import generateSizesMarkup from './generateSizes';
-import { balanceCount } from '../constants';
+import { balanceCount, templateWords, presentBalanceCount } from '../constants';
 import clothes from '../../mock/clothes';
 import accessories from '../../mock/accessories';
+import generateWord from './generateWord';
 
 const generatePopup = (card) => {
     const cardId = +card.dataset.id;
@@ -32,7 +33,7 @@ const generatePopup = (card) => {
                     <img
                         class="popup__slider-preview-image popup__slider-preview-image_active"
                         src="${picture}"
-                        alt='Футболка "Эволюционируй или сдохни"'
+                        alt='${name}'
                         width="50"
                         height="50"
                     />
@@ -54,16 +55,19 @@ const generatePopup = (card) => {
             </h2>
             <div class="popup__main-info">
                 <div class="popup__info-container">
-                    <span class="popup__price">${price} баллов</span>
+                    <span class="popup__price">${price} ${generateWord(price, templateWords)}</span>
                     <button
                         class="${balanceCount > price ? 'submit-button' : 'submit-button submit-button_ask'}"
                         type="submit">
-                        ${balanceCount > price ? 'Заказать' : 'Попросить 50 баллов'}
+                        ${balanceCount > price ? 'Заказать'
+        : `Попросить ${presentBalanceCount} ${generateWord(presentBalanceCount, templateWords)}`}
                     </button>
                 </div>
                 <div class="balance">
                     <span class="balance__title">Твой балланс:</span>
-                    <span class="balance__count">${balanceCount.toLocaleString()} баллов</span>
+                    <span class="balance__count">
+                        ${balanceCount.toLocaleString()} ${generateWord(balanceCount, templateWords)}
+                    </span>
                 </div>
             </div>
             <fieldset class="popup__form-data">
