@@ -16,8 +16,8 @@ const deletePopup = () => {
 const handleEscapeClose = evt => (evt.key === 'Esc' || evt.key === 'Escape' ? deletePopup() : '');
 
 const handleOverlayClose = evt => (evt.target.classList.contains('popup__overlay') ? deletePopup() : '');
-
 /* eslint-enable no-use-before-define */
+
 export const openPopup = (event) => {
     const targetCard = event.target.closest('.card');
 
@@ -30,16 +30,6 @@ export const openPopup = (event) => {
     document.addEventListener('click', handleOverlayClose);
     document.body.style.overflow = 'hidden';
 };
-
-// const setEventListeners = () => {
-//     document.addEventListener('keyup', handleEscapeClose)
-//     document.addEventListener('click', handleOverlayClose);
-// }
-
-// const removeEventListeners = () => {
-//     document.removeEventListener('keyup', handleEscapeClose)
-//     document.removeEventListener('click', handleOverlayClose)
-// }
 
 export const sortElements = arr => arr.sort(item => (item.isNew ? -1 : 1));
 
