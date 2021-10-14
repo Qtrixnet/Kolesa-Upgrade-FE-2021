@@ -1,27 +1,35 @@
 import './index.scss';
+import clothes from '../mock/clothes';
+import accessories from '../mock/accessories';
+import { sortElements, renderCards } from '../utils/utils';
+import { cardsList, categoryButtons } from '../utils/constants';
 
-const cardsList = document.querySelector('.cards-list');
-const popup = document.querySelector('.popup');
-const popupCloseButton = popup.querySelector('.popup__close-button');
+const sorttedClothes = sortElements(clothes);
+const sorttedAccessories = sortElements(accessories);
+const allItems = sortElements([...sorttedClothes, ...sorttedAccessories]);
 
-const CARDS_COUNT = 12;
+renderCards(allItems, cardsList);
 
-const closePopup = () => {
-    popup.classList.remove('popup_opened');
-    popupCloseButton.removeEventListener('click', closePopup);
-};
+categoryButtons.forEach((button) => {
+    button.addEventListener('click', (evt) => {
+        const activeButton = button.classList.contains('main__category-button_active');
+        const { target } = evt;
+        const { category } = target.dataset;
 
-const openPopup = () => {
-    popup.classList.add('popup_opened');
-    popupCloseButton.addEventListener('click', closePopup);
-};
+        if (!activeButton) {
+            categoryButtons.forEach(eachButton => eachButton.classList.remove('main__category-button_active'));
+            target.classList.add('main__category-button_active');
 
-for (let i = 0; i < CARDS_COUNT; i += 1) {
-    const cardTemplate = document.querySelector('.cardTemplate');
-    const card = cardTemplate.content
-        .querySelector('.card')
-        .cloneNode(true);
-
-    cardsList.appendChild(card);
-    card.addEventListener('click', openPopup);
-}
+            switch (category) {
+                case 'accessories':
+                    renderCards(sorttedAccessories, cardsList);
+                    break;
+                case 'clothes':
+                    renderCards(sorttedClothes, cardsList);
+                    break;
+                default:
+                    renderCards(allItems, cardsList);
+            }
+        }
+    });
+});

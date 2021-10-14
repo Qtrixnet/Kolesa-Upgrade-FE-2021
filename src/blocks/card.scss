@@ -3,15 +3,16 @@
 
     &:hover {
         z-index: 10;
-        cursor: pointer;
 
         #{$block}__wrapper {
             position: absolute;
-            background-color: red;
             top: 0;
             left: 0;
             box-shadow: 0 2px 10px $transparent-black;
-            border-radius: 8px;
+        }
+
+        #{$block}__image {
+            transform: scale(1.1);
         }
 
         & .card__price {
@@ -31,9 +32,11 @@
 
     &__wrapper {
         max-width: 330px;
+        min-height: 456px;
         position: relative;
         background-color: $white;
         transition: all 0.2s ease;
+        border-radius: 8px;
     }
 
     &__new {
@@ -45,10 +48,24 @@
         color: $white;
         padding: 4px;
         border-radius: 4px;
+        line-height: 1.2;
     }
 
     &__image-container {
         position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+        line-height: 0px;
+    }
+
+    &__image {
+        object-fit: cover;
+        transition: all 0.2s ease;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
     }
 
     &__price {
