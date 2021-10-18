@@ -2,21 +2,22 @@ import { page } from './constants';
 import generatePopup from './generators/generatePopup';
 import generateCard from './generators/generateCard';
 
-/* eslint-disable no-use-before-define */
+/* eslint-disable */
 const deletePopup = () => {
-    if (document.querySelector('.popup')) {
-        document.querySelector('.popup').remove();
-    }
-
-    document.removeEventListener('keyup', handleEscapeClose);
-    document.removeEventListener('click', handleOverlayClose);
-    document.body.style.overflow = '';
+    document.querySelector(".popup")
+        ? document.querySelector(".popup").remove()
+        : "";
+    document.removeEventListener("keyup", handleEscapeClose);
+    document.removeEventListener("click", handleOverlayClose);
+    document.body.style.overflow = "";
 };
 
-const handleEscapeClose = evt => (evt.key === 'Esc' || evt.key === 'Escape' ? deletePopup() : '');
+const handleEscapeClose = (evt) =>
+    evt.key === "Esc" || evt.key === "Escape" ? deletePopup() : "";
 
-const handleOverlayClose = evt => (evt.target.classList.contains('popup__overlay') ? deletePopup() : '');
-/* eslint-enable no-use-before-define */
+const handleOverlayClose = (evt) =>
+    evt.target.classList.contains("popup__overlay") ? deletePopup() : "";
+/* eslint-enable */
 
 export const openPopup = (event) => {
     const targetCard = event.target.closest('.card');
